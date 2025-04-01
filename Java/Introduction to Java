@@ -1,0 +1,17 @@
+~ Java is an open source technology used for developing platform independent applications.
+~ Developed by James Gosling at Sun Micro Systems in 1995.
+~ Java platform consists of two essential software : JDK and JRE.
+~ JDK (Java Development Kit) : It is a program development environment for writing Java applets and applications.
+    Components of JDK : JRE(Java Runtime Environment), JVM(Java Virtual Machine), compiler(javac), other
+    development tools.
+~ JRE (Java Runtime Environment) : It is a part of JDK which provides different tools for running Java application
+    (it does not include development tools like a compiler)
+    Components of JRE : JVM(Java Virtual Machine), Java Libraries (core APIs), other support files needed to execute
+    Java program.
+~ Java Compiler (javac) : .java programs are converted to an intermediary code called byte code with the help of java
+    compiler. Byte code is platform independent and can run on any operating system (having JDK). This is why Java is
+    called Platform Independent language (Write once, Run anywhere).
+~ JVM (Java Virtual Machine) : It is a crucial part of Java ecosystem that allows to run Java programs on any
+    operating system. It executes Java bytecode(.class) and converts it to machine specific instructions for host
+    system. It consists of ClassLoader (loads compiled .class files to memory), Interpreter (which converts byte
+    code into machine code line by line), JIT(Just in time) compiler (optimize frequently used codes).
