@@ -21,5 +21,18 @@ public class forLoops {
         int numbers[]= {1,2,3,4,5};
         for( int number : numbers)
             System.out.print(number);
+
+        //While loop
+        int num=5;
+        int multiplier = 1;
+        while (multiplier<=10){
+            System.out.printf("%d X %d = %d \n",num,multiplier,num*multiplier);
+            multiplier++;
+        }
+        //Do while loop
+        do {
+            System.out.printf("%d X %d = %d \n",num,multiplier,num*multiplier);
+            multiplier++;
+        }while (multiplier<=10);
     }
 }
