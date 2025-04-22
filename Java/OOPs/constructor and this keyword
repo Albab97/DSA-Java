@@ -1,0 +1,17 @@
+Constructor:
+A constructor defines what occurs when an object of a class is created. It is a special type of function which is called
+every time a new object is created. It has the same name as that of the class to which it belongs to. If it is not
+defined inside the class then it is called a by default constructor (with no arguements). But if it is defined inside
+the class then it is mandatory to invoke it with the required arguements.
+
+Constructors look a little strange because they have no return type, not even void.This is because the implicit return
+type of a class’ constructor is the class type itself.
+
+Student student1 = new Student();
+Here, student1 is a variable of the Student type being created. The Student is the name of the class that is being
+instantiated. The class name,i.e. Student() followed by parentheses is calling the constructor for the class.
+
+ The this Keyword:
+ Sometimes a method will need to refer to the object that invoked it. To allow this, Java defines the this keyword.
+ this can be used inside any method to refer to the current object. That is, this is always a reference to the object on
+ which the method was invoked.
