@@ -1,9 +1,12 @@
 package properties.inheritance;
 
 public class Box {
+//    private double l; // private variables can't be accessed outside this class.
     double l;
     double w;
     double h;
+
+//    double weight;
 
     Box(){
         this.l = -1;
@@ -18,6 +21,7 @@ public class Box {
     }
 
     Box(double side){
+//        super(); // calls Object class constructor
         this.l = side;
         this.w = side;
         this.h = side;
