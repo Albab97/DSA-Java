@@ -19,3 +19,10 @@ In other words, it is the type of the object being referred to (not the type of 
 that determines which version of an overridden method will be executed.
 
 If B extends A then you can override a method in A through B with changing the return type of method to B.
+
+final and overriding :
+A method with final keyword cannot be overridden. Methods that are declared using final will provide some performance enhancement
+because the compiler is free to inline the calls to them since it know that these methods will not be overridden.
+Usually dynamic method resolution (deciding which method to run) after overriding happens at runtime after all the compilation is
+done therefore it is called Late Binding. But the final method cannot be overridden therefore a call to that method will be
+resolved at compile time only - this is called Early Binding.

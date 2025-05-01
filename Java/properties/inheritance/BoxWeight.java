@@ -26,5 +26,9 @@ public class BoxWeight extends Box{
         super(side);
         this.weight = weight;
     }
+//    @Override // Static methods cannot be overridden but they can be inherited.
+//    static void greeting(){
+//        System.out.println("Hey I am in BoxWeight class. Greetings!");
+//    }
 
 }

@@ -1,6 +1,6 @@
 package properties.inheritance;
 
-public class Box {
+public class Box { // public final class Box - this will create a problem because final class cannot be inherited hence BoxWeight cannot extend Box.
 //    private double l; // private variables can't be accessed outside this class.
     double l;
     double w;
@@ -31,6 +31,10 @@ public class Box {
         this.l = old.l;
         this.w = old.w;
         this.h = old.h;
+    }
+
+    static void greeting(){
+        System.out.println("Hey I am in Box class. Greetings!");
     }
 
     public void information(){

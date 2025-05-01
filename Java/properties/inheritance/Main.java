@@ -28,5 +28,8 @@ public class Main {
         BoxPrice box7 = new BoxPrice(3,5,20);
         System.out.println(box7.l+" "+box7.price);
 
+        Box box8 = new BoxWeight();
+        box8.greeting(); // This will call the greeting method of Box and not that of BoxWeight class because static methods cannot be overridden.
+        BoxWeight.greeting(); // static method can be inherited.
     }
 }
