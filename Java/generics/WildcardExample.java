@@ -19,7 +19,6 @@ public class WildcardExample<T extends Number> {
         }
         data[size++] = num;
     }
-
     public void getList(List<? extends Number> list){ // now here we can pass List of type class Number or subclass of Number. This is called Wildcard.
         // do something
     }
