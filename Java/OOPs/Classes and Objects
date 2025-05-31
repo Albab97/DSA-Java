@@ -3,7 +3,7 @@ A class is a template for an object, and an object is an instance of a class.
 A class creates a new data type that can be used to create objects.
 
 When you declare an object of a class, you are creating an instance of that class.
-Thus, a class is a logical construct. An object has physical reality. (That is, an object occupies space in memory).
+Thus, a class is a logical construct. An object has physical reality. (That is, an object occupies space in memory).Class definitions occupy memory in the method area, not the heap.
 
 Objects are characterized by three essential properties: state, identity, and behavior.
 The state of an object is a value from its data type. The identity of an object distinguishes one object from another.
@@ -13,7 +13,7 @@ The behavior of an object is the effect of data-type operations.
 The dot operator links the name of the object with the name of an instance variable.
 Although commonly referred to as the dot operator, the formal specification for Java categorizes the . as a separator.
 
-The 'new' keyword dynamically allocates(that is, allocates at run time)memory for an object & returns a reference(memory address) to it.
+The 'new' keyword dynamically allocates(that is, allocates at run time) memory for an object & returns a reference(memory address) to it.
 This reference is, more or less, the address in memory of the object allocated by new. This reference is then stored in the variable.
 Thus, in Java, all class objects must be dynamically allocated.
 You might be wondering why you do not need to use new for such things as integers or characters. The answer is that Java’s primitive types

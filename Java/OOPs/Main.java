@@ -70,6 +70,5 @@ public class Main {
             this.name = newName;
         }
 
-
     }
 }
