@@ -1,6 +1,6 @@
 package properties.interfaces.extendDemo2;
 
-public class Main implements B,A {
+public class Main implements B {
 
     @Override
     public void greet() {

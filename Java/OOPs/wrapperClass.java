@@ -24,6 +24,12 @@ public class wrapperClass {
         final A var = new A("Albab");
 //        var.num = 11; cannot modify this since num is final variable.
         System.out.println(var.name+" "+var.num);
+        var.name="Ahmed";
+        System.out.println(var.name+" "+var.num);
+
+        final A var2 = new A("Chris");
+//        var = var2; // not allowed since var is final, it will point to the same object;
+
 
         // Since heap memory will not be able to handle so many objects it will automatically goes to Garbage collector and gets destroyed.
 //        for(int i = 1; i<1000000000 ; i++){
@@ -32,7 +38,7 @@ public class wrapperClass {
     }
     static void swap(int a , int b){
         int temp = a;
-        a = b ;
+        a = b;
         b = temp;
     }
     static void swapIt(Integer c, Integer d){

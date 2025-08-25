@@ -22,6 +22,8 @@ public class Main {
 
         Student student3 = new Student(student1);
         System.out.println(student3.name);
+        student3.changeName("Julia");
+        System.out.println(student3.name);
 
         Student student4 = new Student();
         Student student5 = student4;
@@ -63,7 +65,7 @@ public class Main {
         float marks = 80; // default value if nothing is specified
 
         void greetings(){
-            System.out.println("Hello my name is "+this.name);
+            System.out.println("Hello my name is "+ this.name);
         }
 
         void changeName(String newName){

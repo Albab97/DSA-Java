@@ -16,5 +16,6 @@ public class Main {
 
         Parent D = new Daughter(30); // we can use the reference variable of the abstract class also.
         D.career();
+        D.greetings();
     }
 }

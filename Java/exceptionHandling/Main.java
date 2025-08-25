@@ -6,11 +6,11 @@ public class Main {
         int b = 0;
         try {
 //            int c = a/b;
-//            divide(a,b);
-            String name = "Albab";
-            if(name.equals("Albab")){
-                throw new MyException("name is Albab");
-            }
+            divide(a,b);
+//            String name = "Albab";
+//            if(name.equals("Albab")){
+//                throw new MyException("name is Albab");
+//            }
         }catch (ArithmeticException e){
             System.out.println(e.getMessage());
         }catch (Exception e){       // if it's not an Arithmetic exception then it will be caught here. We can't place it before

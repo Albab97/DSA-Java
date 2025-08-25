@@ -7,4 +7,9 @@ public class Circle extends Shape{
     void area(){
         System.out.println("Area is pie*r*r.");
     }
+
+    public static void main(String[] args) {
+        Shape s1 = new Circle();
+        s1.area();
+    }
 }

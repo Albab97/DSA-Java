@@ -4,6 +4,7 @@ public class BoxWeight extends Box{
     double weight;
 
     BoxWeight(){
+        // No super() here, but Java implicitly adds super();
         this.weight = -1;
 //        super.weight = -1; // this refers to the weight attribute of class just above BoxWeight class,i.e. weight attribute in Box class
 //        this.l = 4; // can't access this.l if l is private.

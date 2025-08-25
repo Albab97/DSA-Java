@@ -1,10 +1,11 @@
 package staticExample;
 
 public class InnerClass {
-    // Below static class does not need an instance of InnerClass to be created in order to implement itself. That is why we can use it in main method (which is also static).
+    // Below static class does not need an instance of InnerClass to be created in order to implement itself. That is
+    // why we can use it in main method (which is also static).
     static class Test{
-//        String name;
-        static String name;
+//        static String name;
+        String name;
 
         public Test(String name) {
             this.name = name;
