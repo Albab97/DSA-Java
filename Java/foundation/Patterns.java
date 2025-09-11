@@ -8,7 +8,9 @@ public class Patterns {
         int n = scn.nextInt();
 //        pattern1(n);
 //        pattern2(n);
-        pattern3(n);
+//        pattern3(n);
+//        pattern4(n);
+        pattern5(n);
     }
     static void pattern1(int n){
         for (int i =1 ; i<=n; i++){
@@ -34,6 +36,40 @@ public class Patterns {
             }
             for(int k = j ; k<=n; k++){
                 System.out.print("*");
+            }
+            System.out.println();
+        }
+    }
+    static void pattern4(int n){
+        int sp = 0, st = n;
+        for(int i=1 ; i<=n ; i++){
+            for (int j=1 ; j<=sp ; j++){
+                System.out.print(" ");
+            }
+            for (int j=1 ; j<=st; j++){
+                System.out.print("*");
+            }
+            sp++;
+            st--;
+            System.out.println();
+        }
+    }
+    static void pattern5(int n){
+        int sp = n/2, st =1 ;
+        for (int i=1; i<=n ; i++){
+//            System.out.println(sp+" , "+st);
+            for(int j=1; j<=sp; j++){
+                System.out.print(" ");
+            }
+            for(int j=1; j<=st;j++){
+                System.out.print("*");
+            }
+            if(i<=n/2) {
+                sp--;
+                st = st + 2;
+            }else{
+                sp++;
+                st=st - 2;
             }
             System.out.println();
         }
