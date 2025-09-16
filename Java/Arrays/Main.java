@@ -43,15 +43,24 @@ public class Main {
 
         //modify
 
-        String[] str = new String[4];
-        for (int i = 0; i < str.length; i++) {
-            str[i] = scn.next();
-        }
-        System.out.println(Arrays.toString(str));
+//        String[] str = new String[4];
+//        for (int i = 0; i < str.length; i++) {
+//            str[i] = scn.next();
+//        }
+//        System.out.println(Arrays.toString(str));
+//
+//        str[1]="hey";
+//
+//        System.out.println(Arrays.toString(str));
 
-        str[1]="hey";
+        // arrays are mutable : can be changed via another function (reference variable pointing to same object). Following is an example for this:
 
-        System.out.println(Arrays.toString(str));
-
+        int nums[] = {3,5,6,1};
+        System.out.println(Arrays.toString(nums));
+        change(nums);
+        System.out.println(Arrays.toString(nums));
+    }
+    static void change(int[] arr){
+        arr[0]=99;
     }
 }
