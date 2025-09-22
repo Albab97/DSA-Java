@@ -12,7 +12,8 @@ public class RotateArray {
         for (int i = 0; i < n; i++) {
             nums[i]=scn.nextInt();
         }
-        rotateArrayRightByK(nums, 2);
+//        rotateArrayRightByK(nums, 2);
+        rotateArrayRightByKMostEfficient(nums,3);
         for (int i = 0; i < n; i++) {
             System.out.print(nums[i]+" ");
         }
@@ -47,5 +48,22 @@ public class RotateArray {
             nums[j] = arr[j];
         }
     }
-
+    // Approach 3 : By reversing the array , Space complexity : O(1) ; Time complexity : O(n)
+    static void rotateArrayRightByKMostEfficient(int[] nums, int k){
+        int n= nums.length;
+        if(k>n) k%=n;
+        reverseArray(nums,0,n-1);
+        reverseArray(nums,0,k-1);
+        reverseArray(nums,k,n-1);
+    }
+    static void reverseArray(int[] nums, int i, int j){
+        int n = nums.length;
+        while(i<j){
+            int temp = nums[i];
+            nums[i]=nums[j];
+            nums[j]=temp;
+            j--;
+            i++;
+        }
+    }
 }
