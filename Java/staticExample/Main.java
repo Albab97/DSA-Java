@@ -3,6 +3,7 @@ package staticExample;
 public class Main {
     public static void main(String[] args) {
         System.out.println("Hello you are in Main.");
+        System.out.println(Human.population);
         Human h1 = new Human(21,"Ayan",30000,'M',false);
         System.out.println(h1.population);
         Human h2 = new Human(27,"Jeeshu",45000,'M',false);
@@ -18,7 +19,7 @@ public class Main {
     }
     static void fun(){
 //        greeting();  // you can't use this because it requires an instance
-        // but the function you are using it in does not depend on instances.
+        // but the function you are using it in ( fun() ) does not depend on instances.
 
         // you cannot access a non-static stuff without referencing their instances in a static context(block/scope).
 
@@ -32,7 +33,7 @@ public class Main {
     }
     void greeting(){
 //        fun(); // we can access a static member in a non-static class.
-//        this.fun2(); // we can use this keyword in non-static class but not in static class.
+//        this.fun2(); // we can use 'this' keyword in non-static class but not in static class.
         System.out.println("Have a good day.");
     }
 }

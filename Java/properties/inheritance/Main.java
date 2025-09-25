@@ -19,6 +19,7 @@ public class Main {
         System.out.println(box5.w);
 //        System.out.println(box5.weight); // error - weight attribute not there in Box class.
 
+        // below statement throws an error. Why ?
         // you are given access to attributes of reference type class, i.e BoxWeight
         // hence you should have access to weight class. Means, the one you are trying to access must be initialized.
         // but here when the object is of type parent class then how will you call the constructor of child class.
