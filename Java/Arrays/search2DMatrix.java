@@ -37,6 +37,8 @@ public class search2DMatrix {
         }
         return false;
     }
+
+    // Time Complexity = O(log(m*n))
     static boolean search2DMatrixOptimized(int[][] matrix, int target){
         int m = matrix.length, n= matrix[0].length;
         int row = 0, col = 0;
