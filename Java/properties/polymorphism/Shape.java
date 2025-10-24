@@ -8,4 +8,7 @@ public class Shape {
 //    final void area(){  // A method with final cannot be overridden.
 //        System.out.println("I am in Shape.");
 //    }
+    static void perimeter(){
+        System.out.println("This is the perimeter.");
+    }
 }

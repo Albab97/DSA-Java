@@ -11,7 +11,7 @@ public class Human {
         System.out.println("Don't be deceived by worldly life.");
 //        System.out.println(this.age); // cannot use this over here because it is a static method (not dependent on any instance) but this keyword indicates an object reference
     }
-    public Human(int age, String name, int salary, char gender, boolean married) {
+     Human(int age, String name, int salary, char gender, boolean married) {
         this.age = age;
         this.name = name;
         this.salary = salary;
