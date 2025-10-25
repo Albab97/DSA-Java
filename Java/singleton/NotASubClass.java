@@ -7,7 +7,7 @@ public class NotASubClass {
 
     public static void main(String[] args) {
         SubClass obj = new SubClass(20,"Almaan");
-//        String name = obj.name; // not able to access name because it is protected which is being accessed in class which is not a subclass of A.
+//        String name = obj.name; // not able to access name because it is protected which is being accessed in class which is not a subclass of A and it is also outside the package.
 //        System.out.println(name);
 
     }

@@ -8,9 +8,11 @@ public class SubClass extends A{
     }
     public static void main(String[] args) {
         SubClass obj = new SubClass(20,"Almaan");
-        String name = obj.name; // able to access name because it is protected which is being accessed in SubClass which is a subclass of A.
+        String name = obj.name; // able to access name because it is protected which is being accessed in SubClass of A via an instance of its derived class (SubClass).
         System.out.println(name);
 
+        A obj2 = new A(17, "Maryum");
+        System.out.println(obj2.name); // able to access because its in the same package
     }
 }
 
