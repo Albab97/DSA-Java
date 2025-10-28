@@ -61,5 +61,20 @@ public class SetExamples {
         ts.add(12);
         ts.add(23);
         System.out.println("TreeSet (in sorted order) : "+ ts);
+
+        Set<Student> studentSet = new HashSet<>();
+
+        studentSet.add(new Student(2, "Anuj"));
+        studentSet.add(new Student(3, "Kamesh"));
+        studentSet.add(new Student(1, "Balaji"));
+        studentSet.add(new Student(2, "Zavian")); // it won't come because we have overridden hashcode function on the basis of rollno. It will only take unique rollno.
+
+        Student s1 = new Student(4, "Rohit");
+        Student s2 = new Student(4,"Harsh");
+
+        System.out.println(s1.equals(s2));
+
+        System.out.println(studentSet);
+
     }
 }
