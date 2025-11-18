@@ -1,13 +1,12 @@
 package collections;
 
-import java.util.ArrayList;
-import java.util.Iterator;
-import java.util.List;
-import java.util.Scanner;
+import java.util.*;
 
 public class ArrayListExample {
     public static void main(String[] args) {
-        Scanner scn = new Scanner(System.in);
+
+        // Popular methods of List<> interface : .add(value), .set(index, value), .contains(value), .remove(value),.get(index)
+
         List<Integer> list = new ArrayList<>(5); // dynamic array of variable size. We can add any no. of elements
         list.add(123);
         list.add(0);
@@ -25,7 +24,6 @@ public class ArrayListExample {
         list.remove(2);
         list.remove(Integer.valueOf(99));
         System.out.println(list);
-
 //        //input
 //        for (int i = 0; i < 5; i++) {
 //            list.add(scn.nextInt());
@@ -44,5 +42,6 @@ public class ArrayListExample {
         while (it.hasNext()){
             System.out.println("iterator "+it.next());
         }
+
     }
 }

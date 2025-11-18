@@ -5,6 +5,9 @@ import java.util.Queue;
 
 public class LinkedListQueueExample {
     public static void main(String[] args) {
+
+        //Popular methods for Queue : .offer(value) [enqueue] , .poll() [dequeue], .peek() [head element in the front]
+
         Queue<Integer> queue = new LinkedList<>();
 
         queue.offer(9);

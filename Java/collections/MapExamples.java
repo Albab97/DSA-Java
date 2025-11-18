@@ -11,6 +11,7 @@ public class MapExamples {
 //        Map is an Interface whose elements are stored in key/value pairs. Keys are unique values associated with individual Values.
 //        A map cannot contain duplicate keys. And, each key is associated with a single value.
 
+//        Popular methods in HashMap : .put(key,value) , .remove(key), .containsKey(key), .putIfAbsent(key,value), .entrySet() [iterating a map], .keySet() [iterating keys], .values() [iterating values]
         Map<String,Integer> numbers = new HashMap<>();
 
         numbers.put("One",1);

@@ -6,7 +6,7 @@ import java.util.Queue;
 
 public class PriorityQueueExample {
     public static void main(String[] args) {
-        // By default Priority queue implements a min heap. In order to make it a max heap we pass a comparator to PriorityQueue class
+        // By default, Priority queue implements a min heap. In order to make it a max heap we pass a comparator to PriorityQueue class
 
         Queue<Integer> pq = new PriorityQueue<>();
 //        Queue<Integer> pq = new PriorityQueue<>(Comparator.reverseOrder());

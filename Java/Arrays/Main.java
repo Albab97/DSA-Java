@@ -59,6 +59,13 @@ public class Main {
         System.out.println(Arrays.toString(nums));
         change(nums);
         System.out.println(Arrays.toString(nums));
+
+        int[] a = {42,65,85,123,41};
+        Arrays.sort(a);
+        System.out.println(Arrays.toString(a));
+
+        int index = Arrays.binarySearch(a,123);
+        System.out.println(index);
     }
     static void change(int[] arr){
         arr[0]=99;

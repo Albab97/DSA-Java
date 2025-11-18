@@ -18,7 +18,7 @@ public class ArrayDequeExample {
         System.out.println(adq.peekFirst()); // same as peek()
         System.out.println(adq.peekLast()); // shows the last element (element which at the rear end)
 
-        System.out.println(adq.poll()); // removes the element from the front
+        System.out.println(adq.poll()); // removes the element from the front and returns the removed element
         System.out.println("After poll() : "+ adq);
 
         System.out.println(adq.pollFirst()); // same as poll()

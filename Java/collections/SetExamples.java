@@ -15,7 +15,7 @@ public class SetExamples {
         set.add(23);
         set.add(30);
         set.add(12);
-        set.add(23); // ignores this because its a duplicate
+        set.add(23); // it ignores this because it's a duplicate
         System.out.println("HashSet (unordered) : "+ set); // It will print in any order ( not necessarily sorted )
 
         set.remove(12);
